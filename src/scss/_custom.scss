@@ -1,0 +1,240 @@
+// Utilities
+body {
+  font-size: 18px
+}
+
+.fa {
+  line-height: 1.5em;
+}
+
+.print {
+  display: none;
+}
+
+.disabled {
+  cursor: default !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.loader-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.8);
+  z-index: 1080;
+}
+
+.loader__img {
+  width: 90px;
+  height: 90px;
+  animation: rotate 2s steps(8) infinite;
+}
+
+.loader__text {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.outline {
+  &-0 {
+    outline: none !important;
+  }
+}
+
+.w {
+  &-30 {
+    width: 30% !important;
+  }
+  &-40 {
+    width: 40% !important;
+  }
+  &-45 {
+    width: 45% !important;
+  }
+  &-60 {
+    width: 60% !important;
+  }
+}
+
+.btn-square {
+  height: 10vh;
+}
+
+.btn-calc-submit {
+  width: 24%;
+}
+
+//
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.btn-wrapper {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+  &--home {
+    width: 50%;
+  }
+}
+
+.modal-lg {
+  max-width: 900px;
+}
+
+.font-size-2 {
+  font-size: 2em;
+}
+
+.table td {
+  padding: 0.7rem
+}
+
+.page-link {
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.rotation {
+  &:before {
+    display: block;
+    transform-origin: 50% 45%;
+    animation: spin .7s linear infinite;
+  }
+}
+
+ul.react-datepicker__time-list {
+  padding: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 790px) {
+  .modal-dialog {
+    &--wrapper {
+      max-width: 95%;
+      margin-top: 10%;
+    }
+  }
+  .btn-wrapper--home {
+    width: 100%;
+  }
+  .main-table {
+    order: 2;
+  }
+  .btn-calc-clean {
+    display: none;
+  }
+  .btn-calc-submit {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile {
+    &_d-block {
+      display: block;
+    }
+    
+    &_order {
+      &-1 {
+        order: -1;
+      }
+      &-2 {
+        order: 2;
+      }
+    }
+
+    &_ml {
+      &-auto {
+        margin-left: auto;
+      }
+      &-0 {
+        margin-left: 0 !important;
+      }
+    }
+    &_mr {
+      &-auto {
+        margin-right: auto;
+      }
+      &-3 {
+        margin-right: 1rem !important;
+      }
+    }
+    &_mt-2 {
+      margin-top: 0.5rem !important;
+    }
+    &_mb-2 {
+      margin-bottom: 0.5rem !important;
+    }
+
+    &_pt-2, &_py-2 {
+      padding-top: 0.5rem !important;
+    }
+
+    &_pb-2, &_py-2 {
+      padding-bottom: 0.5rem !important;
+    }
+
+    &_w {
+      &-30 {
+        width: 30% !important;
+      }
+      &-40 {
+        width: 40% !important;
+      }
+      &-45 {
+        width: 45% !important;
+      }
+      &-50 {
+        width: 50% !important;
+      }
+      &-60 {
+        width: 60% !important;
+      }
+      &-100 {
+        width: 100% !important;
+      }
+    }
+
+    &_flex {
+      &-column-reverse {
+        flex-direction: column-reverse !important;
+      }
+      &-row-wrap {
+        flex-flow: row wrap !important;
+      }
+      &-content {
+        &-center {
+          justify-content: center;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 1.85rem;
+    }
+  }
+  .app-footer {
+    flex-basis: 75px;
+  }
+}

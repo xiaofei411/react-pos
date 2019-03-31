@@ -1,0 +1,10 @@
+export const getInfo = state => state.currentPlayer.info;
+export const getTransactions = state => state.currentPlayer.transactions;
+export const getTransactionsPage = state => state.currentPlayer.transactions ? state.currentPlayer.transactions.page : 1;
+export const getTransactionsPerPage = state => state.currentPlayer.transactions ? state.currentPlayer.transactions.number : 10;
+export const getTransactionsTotal = state => state.currentPlayer.transactions ? state.currentPlayer.transactions.total : 1;
+export const getGames = state => state.currentPlayer.games;
+export const getGamesPage = state => state.currentPlayer.games ? state.currentPlayer.games.page : 1;
+export const getGamesPerPage = state => state.currentPlayer.games ? state.currentPlayer.games.number : 10;
+export const getGamesTotal = state => state.currentPlayer.games ? state.currentPlayer.games.total : 1;
+export const isFetching = state => state.currentPlayer.isFetching;

@@ -1,0 +1,1 @@
+export const getWindowData = state => state.window;

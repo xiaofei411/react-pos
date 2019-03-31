@@ -1,0 +1,94 @@
+import {
+  keyMirror
+} from 'helpers';
+
+export const AUTH = keyMirror({
+  SIGN_IN: null,
+  SIGN_IN_OK: null,
+  SIGN_IN_ERR: null,
+  SIGN_OUT: null,
+  AUTH_SET_USER_DATA: null,
+  REFRESH_TOKEN: null,
+  REFRESH_TOKEN_OK: null,
+  REFRESH_TOKEN_ERR: null,
+  CACHE_ACTION: null,
+  CLEAR_CACHED_ACTIONS: null
+});
+
+
+export const USER = keyMirror({
+  USER_GET: null,
+  USER_GET_OK: null,
+  USER_GET_ERR: null,
+  USER_CREATE: null,
+  USER_CREATE_OK: null,
+  USER_CREATE_ERR: null,
+  USER_UPDATE: null,
+  USER_UPDATE_OK: null,
+  USER_UPDATE_ERR: null,
+  USER_GET_LIST: null,
+  USER_GET_LIST_OK: null,
+  USER_GET_LIST_ERR: null,
+  USER_SEARCH: null,
+  USER_SEARCH_OK: null,
+  USER_SEARCH_ERR: null,
+  USER_ADD_BALANCE: null,
+  USER_ADD_BALANCE_OK: null,
+  USER_ADD_BALANCE_ERR: null,
+  USER_REDEEM_BALANCE: null,
+  USER_REDEEM_BALANCE_OK: null,
+  USER_REDEEM_BALANCE_ERR: null,
+  USER_DISPOSE_USERS_LIST: null,
+  USER_GET_TRANSACTIONS: null,
+  USER_GET_TRANSACTIONS_OK: null,
+  USER_GET_TRANSACTIONS_ERR: null,
+  USER_GET_GAMES: null,
+  USER_GET_GAMES_OK: null,
+  USER_GET_GAMES_ERR: null,
+
+  USER_ADD_COMPS: null,
+  USER_ADD_COMPS_OK: null,
+  USER_ADD_COMPS_ERR: null,
+});
+
+export const MODAL = keyMirror({
+  OPEN_MODAL_WINDOW: null,
+  CLOSE_MODAL_WINDOW: null,
+});
+
+
+export const EMPLOYEE = keyMirror({
+  EMP_CREATE_CACHIER: null,
+  EMP_CREATE_CACHIER_OK: null,
+  EMP_CREATE_CACHIER_ERR: null,
+  EMP_UPDATE_CACHIER: null,
+  EMP_UPDATE_CACHIER_OK: null,
+  EMP_UPDATE_CACHIER_ERR: null,
+  EMP_GET: null,
+  EMP_GET_OK: null,
+  EMP_GET_ERR: null,
+  EMP_GET_CACHIER_LIST: null,
+  EMP_GET_CACHIER_LIST_OK: null,
+  EMP_GET_CACHIER_LIST_ERR: null,
+  EMP_SEARCH_CACHIER: null,
+  EMP_SEARCH_CACHIER_OK: null,
+  EMP_SEARCH_CACHIER_ERR: null,
+  EMP_DISPOSE_EMPS_LIST: null,
+  EMP_GET_ADMIN_SUM: null,
+  EMP_GET_ADMIN_SUM_OK: null,
+  EMP_GET_ADMIN_SUM_ERR: null,
+  EMP_GET_CACHIER_SUM: null,
+  EMP_GET_CACHIER_SUM_OK: null,
+  EMP_GET_CACHIER_SUM_ERR: null,
+  EMP_GET_ADMIN_TRANSACTIONS: null,
+  EMP_GET_ADMIN_TRANSACTIONS_OK: null,
+  EMP_GET_ADMIN_TRANSACTIONS_ERR: null,
+  EMP_GET_CACHIER_TRANSACTIONS: null,
+  EMP_GET_CACHIER_TRANSACTIONS_OK: null,
+  EMP_GET_CACHIER_TRANSACTIONS_ERR: null,
+});
+
+export const WINDOW = keyMirror({
+  WINDOW_DEFINE_SIZE: null,
+  WINDOW_RESIZE: null
+});
